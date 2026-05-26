@@ -6177,7 +6177,55 @@ namespace LenovoLegionToolkit.WPF.Resources {
                 return ResourceManager.GetString("TurnOnWiFiAutomationStepControl_Title", resourceCulture);
             }
         }
-        
+
+        public static string TurnOnBluetoothAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("TurnOnBluetoothAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string TurnOffBluetoothAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("TurnOffBluetoothAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string EnableDoNotDisturbAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("EnableDoNotDisturbAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string DisableDoNotDisturbAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("DisableDoNotDisturbAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string MuteSystemVolumeAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("MuteSystemVolumeAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string UnmuteSystemVolumeAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("UnmuteSystemVolumeAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string TurnOnNightLightAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("TurnOnNightLightAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string TurnOffNightLightAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("TurnOffNightLightAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Unexpected exception occurred:
         ///{0}.

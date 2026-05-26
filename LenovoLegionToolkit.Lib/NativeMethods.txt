@@ -139,6 +139,8 @@ HidD_SetFeature
 HidP_GetCaps
 
 CM_Get_DevNode_Status
+CM_Enable_DevNode
+CM_Disable_DevNode
 
 ChangeServiceConfig
 CloseServiceHandle
