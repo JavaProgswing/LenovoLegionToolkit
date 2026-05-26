@@ -2274,4 +2274,28 @@ Supported formats are: {1}.</value>
     <value>Always put notification at the top.
 It won't affect other full screen windows, but you will not be able to click on the notifications.</value>
   </data>
+  <data name="TurnOnBluetoothAutomationStepControl_Title" xml:space="preserve">
+    <value>Turn on Bluetooth</value>
+  </data>
+  <data name="TurnOffBluetoothAutomationStepControl_Title" xml:space="preserve">
+    <value>Turn off Bluetooth</value>
+  </data>
+  <data name="EnableDoNotDisturbAutomationStepControl_Title" xml:space="preserve">
+    <value>Enable Do Not Disturb</value>
+  </data>
+  <data name="DisableDoNotDisturbAutomationStepControl_Title" xml:space="preserve">
+    <value>Disable Do Not Disturb</value>
+  </data>
+  <data name="MuteSystemVolumeAutomationStepControl_Title" xml:space="preserve">
+    <value>Mute system volume</value>
+  </data>
+  <data name="UnmuteSystemVolumeAutomationStepControl_Title" xml:space="preserve">
+    <value>Unmute system volume</value>
+  </data>
+  <data name="TurnOnNightLightAutomationStepControl_Title" xml:space="preserve">
+    <value>Turn on Night Light</value>
+  </data>
+  <data name="TurnOffNightLightAutomationStepControl_Title" xml:space="preserve">
+    <value>Turn off Night Light</value>
+  </data>
 </root>

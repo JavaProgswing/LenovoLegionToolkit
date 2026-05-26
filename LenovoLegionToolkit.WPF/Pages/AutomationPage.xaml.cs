@@ -193,6 +193,14 @@ public partial class AutomationPage
             new TurnOffMonitorsAutomationStep(),
             new TurnOffWiFiAutomationStep(),
             new TurnOnWiFiAutomationStep(),
+            new TurnOnBluetoothAutomationStep(),
+            new TurnOffBluetoothAutomationStep(),
+            new EnableDoNotDisturbAutomationStep(),
+            new DisableDoNotDisturbAutomationStep(),
+            new MuteSystemVolumeAutomationStep(),
+            new UnmuteSystemVolumeAutomationStep(),
+            new TurnOnNightLightAutomationStep(),
+            new TurnOffNightLightAutomationStep(),
             new WhiteKeyboardBacklightAutomationStep(default),
             new WinKeyAutomationStep(default)
         };
