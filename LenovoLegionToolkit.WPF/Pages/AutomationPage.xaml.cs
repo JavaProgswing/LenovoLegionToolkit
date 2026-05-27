@@ -193,6 +193,8 @@ public partial class AutomationPage
             new TurnOffMonitorsAutomationStep(),
             new TurnOffWiFiAutomationStep(),
             new TurnOnWiFiAutomationStep(),
+            new FanFullSpeedAutomationStep(default),
+            new GSyncAutomationStep(default),
             new TurnOnBluetoothAutomationStep(),
             new TurnOffBluetoothAutomationStep(),
             new EnableDoNotDisturbAutomationStep(),

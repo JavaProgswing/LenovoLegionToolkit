@@ -369,6 +369,8 @@ public class AutomationPipelineControl : UserControl
             TurnOffMonitorsAutomationStep s => new TurnOffMonitorsAutomationStepControl(s),
             TurnOffWiFiAutomationStep s => new TurnOffWiFiAutomationStepControl(s),
             TurnOnWiFiAutomationStep s => new TurnOnWiFiAutomationStepControl(s),
+            FanFullSpeedAutomationStep s => new FanFullSpeedAutomationStepControl(s),
+            GSyncAutomationStep s => new GSyncAutomationStepControl(s),
             TurnOnBluetoothAutomationStep s => new TurnOnBluetoothAutomationStepControl(s),
             TurnOffBluetoothAutomationStep s => new TurnOffBluetoothAutomationStepControl(s),
             EnableDoNotDisturbAutomationStep s => new EnableDoNotDisturbAutomationStepControl(s),

@@ -9,6 +9,7 @@ using LenovoLegionToolkit.Lib.Features.FlipToStart;
 using LenovoLegionToolkit.Lib.Features.Hybrid;
 using LenovoLegionToolkit.Lib.Features.Hybrid.Notify;
 using LenovoLegionToolkit.Lib.Features.InstantBoot;
+using LenovoLegionToolkit.Lib.Features.FanFullSpeed;
 using LenovoLegionToolkit.Lib.Features.OverDrive;
 using LenovoLegionToolkit.Lib.Features.PanelLogo;
 using LenovoLegionToolkit.Lib.Features.WhiteKeyboardBacklight;
@@ -50,6 +51,9 @@ public class IoCModule : Module
         builder.Register<FlipToStartFeature>();
         builder.Register<FlipToStartCapabilityFeature>(true);
         builder.Register<FlipToStartUEFIFeature>(true);
+        builder.Register<FanFullSpeedFeature>();
+        builder.Register<FanFullSpeedCapabilityFeature>(true);
+        builder.Register<FanFullSpeedWmiFeature>(true);
         builder.Register<FnLockFeature>();
         builder.Register<GSyncFeature>();
         builder.Register<HDRFeature>();
