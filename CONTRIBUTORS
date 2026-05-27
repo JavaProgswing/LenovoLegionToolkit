@@ -1,0 +1,20 @@
+LenovoLegionToolkit Contributors
+==================================
+
+Original Author
+---------------
+Bartosz Cichecki
+  https://github.com/BartoszCichecki
+
+GSoC 2026 Contributors
+-----------------------
+Yashasvi Allenkujur  <yashasviallenkujur@gmail.com>
+  https://github.com/JavaProgswing
+  Contributions:
+    - Bluetooth on/off automation steps (SetupAPI CM_Enable/Disable_DevNode)
+    - Do Not Disturb / Focus Assist automation steps (CloudStore registry)
+    - System volume mute/unmute automation steps (NAudio)
+    - Night Light on/off automation steps (CloudStore registry)
+    - Fan Full Speed automation step (composite WMI: LenovoFanMethod + CapabilityID)
+    - G-Sync automation step (LenovoGameZoneData WMI)
+    - LOQ series model compatibility expansion

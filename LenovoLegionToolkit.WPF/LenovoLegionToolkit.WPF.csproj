@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
@@ -10,8 +10,8 @@
 		<Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
 		<Company>LenovoLegionToolkit Contributors</Company>
 		<Description>Open-source toolkit for Lenovo Legion and LOQ laptops</Description>
-		<FileVersion>2.26.0</FileVersion>
-		<Version>2.26.0</Version>
+		<FileVersion>2.27.0</FileVersion>
+		<Version>2.27.0</Version>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>

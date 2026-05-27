@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0-windows</TargetFramework>
@@ -8,8 +8,8 @@
         <Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
         <AssemblyName>llt</AssemblyName>
         <Platforms>x64</Platforms>
-        <FileVersion>2.26.0</FileVersion>
-        <Version>2.26.0</Version>
+        <FileVersion>2.27.0</FileVersion>
+        <Version>2.27.0</Version>
         <NeutralLanguage>en</NeutralLanguage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
