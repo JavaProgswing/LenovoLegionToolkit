@@ -4,7 +4,8 @@
 		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
 		<Platforms>x64</Platforms>
 		<Nullable>enable</Nullable>
-		<Copyright>© 2024 Bartosz Cichecki</Copyright>
+		<Copyright>© 2024-2025 Bartosz Cichecki; © 2025 Yashasvi Allenkujur</Copyright>
+		<Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<NeutralLanguage>en</NeutralLanguage>
 		<UseWindowsForms>true</UseWindowsForms>

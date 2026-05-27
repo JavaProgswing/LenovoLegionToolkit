@@ -26,7 +26,7 @@ public static partial class Compatibility
     private const string ALLOWED_VENDOR = "LENOVO";
 
     private static readonly string[] AllowedModelsPrefix = [
-        // Worldwide variants
+        // Worldwide variants — Legion series
         "17ACH",
         "17ARH",
         "17ITH",
@@ -59,13 +59,25 @@ public static partial class Compatibility
         "14APH",
         "14IRP",
 
-        // Chinese variants
+        // Worldwide variants — LOQ series (budget/mid-range gaming)
+        // LOQ 15APH8/9, LOQ 15IRH8, LOQ 15ARP9, LOQ 15IAX9, etc.
+        // Most LOQ suffixes overlap with Legion; these are LOQ-specific additions.
+        "14IRH",    // LOQ 14IRH8 (Intel, 14-inch)
+        "14IAP",    // LOQ 14IAP (Intel Arc)
+        "15INH",    // LOQ 15INH (budget Intel LOQ)
+        "16IRB",    // LOQ 16IRB (Intel, 16-inch)
+
+        // Chinese variants — Legion
         "G5000",
         "R9000",
         "R7000",
         "Y9000",
         "Y7000",
-            
+
+        // Chinese variants — LOQ
+        "LOQ15",
+        "LOQ16",
+
         // Limited compatibility
         "17IR",
         "15IR",

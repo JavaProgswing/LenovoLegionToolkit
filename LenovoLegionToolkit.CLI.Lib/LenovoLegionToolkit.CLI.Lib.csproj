@@ -5,7 +5,8 @@
         <Platforms>x64</Platforms>
         <ImplicitUsings>disable</ImplicitUsings>
         <Nullable>enable</Nullable>
-	    <Copyright>© 2024 Bartosz Cichecki</Copyright>
+	    <Copyright>© 2024-2025 Bartosz Cichecki; © 2025 Yashasvi Allenkujur</Copyright>
+        <Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
         <NeutralLanguage>en</NeutralLanguage>
     </PropertyGroup>
 	<ItemGroup>
