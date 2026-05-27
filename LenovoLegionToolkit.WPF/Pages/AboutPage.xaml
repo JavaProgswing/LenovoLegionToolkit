@@ -49,11 +49,15 @@
         <wpfui:Hyperlink
             Content="{x:Static resources:Resource.AboutPage_ProjectWebsiteOnGitHub}"
             Icon="Link24"
-            NavigateUri="https://github.com/BartoszCichecki/LenovoLegionToolkit" />
+            NavigateUri="https://github.com/JavaProgswing/LenovoLegionToolkit" />
         <wpfui:Hyperlink
             Content="{x:Static resources:Resource.AboutPage_LatestReleaseOnGitHub}"
             Icon="Link24"
-            NavigateUri="https://github.com/BartoszCichecki/LenovoLegionToolkit/releases/latest" />
+            NavigateUri="https://github.com/JavaProgswing/LenovoLegionToolkit/releases/latest" />
+        <wpfui:Hyperlink
+            Content="Contributor: Yashasvi Allenkujur on GitHub"
+            Icon="Person24"
+            NavigateUri="https://github.com/JavaProgswing" />
 
         <TextBlock
             Padding="0,24,0,8"

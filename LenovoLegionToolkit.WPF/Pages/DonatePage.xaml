@@ -54,16 +54,6 @@
                 </StackPanel>
             </Border>
 
-            <Border
-                Width="300"
-                Margin="0,16,0,0"
-                HorizontalAlignment="Left"
-                Background="White"
-                CornerRadius="16"
-                RenderOptions.BitmapScalingMode="Fant">
-                <Image Margin="16" Source="/Assets/Donate/paypal_qr.png" />
-            </Border>
-
         </StackPanel>
 
     </StackPanel>
