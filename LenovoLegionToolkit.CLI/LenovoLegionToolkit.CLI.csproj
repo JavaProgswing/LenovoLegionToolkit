@@ -4,11 +4,12 @@
         <TargetFramework>net8.0-windows</TargetFramework>
         <RuntimeIdentifier>win-x64</RuntimeIdentifier>
         <Nullable>enable</Nullable>
-	    <Copyright>© 2024 Bartosz Cichecki</Copyright>
+	    <Copyright>© 2024-2025 Bartosz Cichecki; © 2025 Yashasvi Allenkujur</Copyright>
+        <Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
         <AssemblyName>llt</AssemblyName>
         <Platforms>x64</Platforms>
-        <FileVersion>0.0.1</FileVersion>
-        <Version>0.0.1</Version>
+        <FileVersion>2.26.0</FileVersion>
+        <Version>2.26.0</Version>
         <NeutralLanguage>en</NeutralLanguage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

@@ -6,9 +6,12 @@
 		<OutputType>WinExe</OutputType>
 		<ApplicationIcon>Assets/icon.ico</ApplicationIcon>
 		<AssemblyName>Lenovo Legion Toolkit</AssemblyName>
-		<Copyright>© 2024 Bartosz Cichecki</Copyright>
-		<FileVersion>0.0.1</FileVersion>
-		<Version>0.0.1</Version>
+		<Copyright>© 2024-2025 Bartosz Cichecki; © 2025 Yashasvi Allenkujur</Copyright>
+		<Authors>Bartosz Cichecki;Yashasvi Allenkujur</Authors>
+		<Company>LenovoLegionToolkit Contributors</Company>
+		<Description>Open-source toolkit for Lenovo Legion and LOQ laptops</Description>
+		<FileVersion>2.26.0</FileVersion>
+		<Version>2.26.0</Version>
 		<Nullable>enable</Nullable>
 		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>

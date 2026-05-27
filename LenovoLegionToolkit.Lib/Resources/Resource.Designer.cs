@@ -495,12 +495,36 @@ namespace LenovoLegionToolkit.Lib.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Off.
         /// </summary>
+        public static string FanFullSpeedState_Off {
+            get {
+                return ResourceManager.GetString("FanFullSpeedState_Off", resourceCulture);
+            }
+        }
+
+        public static string FanFullSpeedState_On {
+            get {
+                return ResourceManager.GetString("FanFullSpeedState_On", resourceCulture);
+            }
+        }
+
+        public static string GSyncState_Off {
+            get {
+                return ResourceManager.GetString("GSyncState_Off", resourceCulture);
+            }
+        }
+
+        public static string GSyncState_On {
+            get {
+                return ResourceManager.GetString("GSyncState_On", resourceCulture);
+            }
+        }
+
         public static string OverdriveState_Off {
             get {
                 return ResourceManager.GetString("OverdriveState_Off", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to On.
         /// </summary>

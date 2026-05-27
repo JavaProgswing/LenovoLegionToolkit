@@ -122,9 +122,19 @@ public enum GPUState
     PoweredOff
 }
 
+public enum FanFullSpeedState
+{
+    [Display(ResourceType = typeof(Resource), Name = "FanFullSpeedState_Off")]
+    Off,
+    [Display(ResourceType = typeof(Resource), Name = "FanFullSpeedState_On")]
+    On
+}
+
 public enum GSyncState
 {
+    [Display(ResourceType = typeof(Resource), Name = "GSyncState_Off")]
     Off,
+    [Display(ResourceType = typeof(Resource), Name = "GSyncState_On")]
     On
 }
 

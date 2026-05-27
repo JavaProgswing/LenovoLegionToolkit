@@ -496,4 +496,16 @@
   <data name="UpdateCheckFrequency_PerWeek" xml:space="preserve">
     <value>Weekly</value>
   </data>
+  <data name="FanFullSpeedState_Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="FanFullSpeedState_On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="GSyncState_Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="GSyncState_On" xml:space="preserve">
+    <value>On</value>
+  </data>
 </root>

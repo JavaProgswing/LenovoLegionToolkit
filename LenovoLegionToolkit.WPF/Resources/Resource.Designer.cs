@@ -6178,6 +6178,30 @@ namespace LenovoLegionToolkit.WPF.Resources {
             }
         }
 
+        public static string FanFullSpeedAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("FanFullSpeedAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string FanFullSpeedAutomationStepControl_Message {
+            get {
+                return ResourceManager.GetString("FanFullSpeedAutomationStepControl_Message", resourceCulture);
+            }
+        }
+
+        public static string GSyncAutomationStepControl_Title {
+            get {
+                return ResourceManager.GetString("GSyncAutomationStepControl_Title", resourceCulture);
+            }
+        }
+
+        public static string GSyncAutomationStepControl_Message {
+            get {
+                return ResourceManager.GetString("GSyncAutomationStepControl_Message", resourceCulture);
+            }
+        }
+
         public static string TurnOnBluetoothAutomationStepControl_Title {
             get {
                 return ResourceManager.GetString("TurnOnBluetoothAutomationStepControl_Title", resourceCulture);
