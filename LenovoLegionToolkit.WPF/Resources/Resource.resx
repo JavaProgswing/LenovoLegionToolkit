@@ -549,9 +549,9 @@ WARNING: This action will not run correctly, if internal display is off.</value>
     <value>Donate with</value>
   </data>
   <data name="DonatePage_Message" xml:space="preserve">
-    <value>Development and maintenance of Lenovo Legion Toolkit takes a lot of time. If you like using this software you can support its future by donating an amount of your choice.
+    <value>Development and maintenance of this fork of Lenovo Legion Toolkit takes a lot of time. If you like using this software you can support its future by donating an amount of your choice.
 
-Click the PayPal logo below or scan the QR code to donate with PayPal.
+Click the PayPal button below to donate via PayPal.
 
 Thanks in advance!</value>
   </data>
