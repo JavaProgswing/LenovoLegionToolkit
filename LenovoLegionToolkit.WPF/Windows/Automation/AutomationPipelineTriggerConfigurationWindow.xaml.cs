@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -103,6 +103,7 @@ public partial class AutomationPipelineTriggerConfigurationWindow
         ITimeAutomationPipelineTrigger => true,
         IUserInactivityPipelineTrigger t2 when t2.InactivityTimeSpan > TimeSpan.Zero => true,
         IWiFiConnectedPipelineTrigger => true,
+        ISensorAutomationPipelineTrigger => true,
         _ => false
     };
 
@@ -116,6 +117,7 @@ public partial class AutomationPipelineTriggerConfigurationWindow
         ITimeAutomationPipelineTrigger tt => new TimeAutomationPipelineTriggerTabItemContent(tt),
         IUserInactivityPipelineTrigger ut when ut.InactivityTimeSpan > TimeSpan.Zero => new UserInactivityPipelineTriggerTabItemContent(ut),
         IWiFiConnectedPipelineTrigger wt => new WiFiConnectedPipelineTriggerTabItemContent(wt),
+        ISensorAutomationPipelineTrigger st => new SensorAutomationPipelineTriggerTabItemContent(st),
         _ => null
     };
 }

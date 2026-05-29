@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers;
 using Wpf.Ui.Common;
 
@@ -25,6 +25,7 @@ public static class AutomationPipelineTriggerExtensions
         IWiFiConnectedPipelineTrigger => SymbolRegular.Wifi124,
         IWiFiDisconnectedPipelineTrigger => SymbolRegular.WifiOff24,
         IPeriodicAutomationPipelineTrigger => SymbolRegular.ArrowRepeatAll24,
+        ISensorAutomationPipelineTrigger => SymbolRegular.Temperature24,
         _ => throw new ArgumentException($"Unsupported trigger {trigger.GetType().Name}")
     };
 }

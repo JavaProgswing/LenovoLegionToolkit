@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -47,6 +47,8 @@ public partial class CreateAutomationPipelineWindow
         new WiFiDisconnectedAutomationPipelineTrigger(),
         new TimeAutomationPipelineTrigger(false, false, TimeExtensions.UtcNow, Enum.GetValues<DayOfWeek>()),
         new PeriodicAutomationPipelineTrigger(TimeSpan.FromMinutes(1)),
+        new CpuTemperatureTrigger(80, true),
+        new GpuTemperatureTrigger(80, true),
         new OnStartupAutomationPipelineTrigger(),
         new OnResumeAutomationPipelineTrigger()
     ];

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -297,6 +297,9 @@ public class AutomationPipelineControl : UserControl
         if (AutomationPipeline.Trigger is IDeviceAutomationPipelineTrigger dt && dt.InstanceIds.Length != 0)
             result += $" | {Resource.DevicePipelineTriggerTabItemContent_Devices}: {dt.InstanceIds.Length}";
 
+        if (AutomationPipeline.Trigger is ISensorAutomationPipelineTrigger st)
+            result += $" | {st.DisplayName}: {(st.IsGreaterThan ? ">" : "<")} {st.TemperatureThreshold}°C";
+
         return result;
     }
 
@@ -362,6 +365,8 @@ public class AutomationPipelineControl : UserControl
             ResolutionAutomationStep s => new ResolutionAutomationStepControl(s),
             RGBKeyboardBacklightAutomationStep s => new RGBKeyboardBacklightAutomationStepControl(s),
             RunAutomationStep s => new RunAutomationStepControl(s),
+            SuspendProcessAutomationStep s => new SuspendProcessAutomationStepControl(s),
+            ResumeProcessAutomationStep s => new ResumeProcessAutomationStepControl(s),
             SpeakerAutomationStep s => new SpeakerAutomationStepControl(s),
             SpectrumKeyboardBacklightBrightnessAutomationStep s => new SpectrumKeyboardBacklightBrightnessAutomationStepControl(s),
             SpectrumKeyboardBacklightImportProfileAutomationStep s => new SpectrumKeyboardBacklightImportProfileAutomationStepControl(s),

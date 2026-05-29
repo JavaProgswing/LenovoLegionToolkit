@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -26,7 +26,8 @@ public class AutomationProcessor(
     SessionLockUnlockListener sessionLockUnlockListener,
     TimeAutoListener timeAutoListener,
     UserInactivityAutoListener userInactivityAutoListener,
-    WiFiAutoListener wifiAutoListener)
+    WiFiAutoListener wifiAutoListener,
+    SensorsAutoListener sensorsAutoListener)
 {
     private readonly AsyncLock _ioLock = new();
     private readonly AsyncLock _runLock = new();
@@ -303,6 +304,12 @@ public class AutomationProcessor(
         await ProcessEvent(e).ConfigureAwait(false);
     }
 
+    private async void SensorsAutoListener_Changed(object? sender, SensorsAutoListener.ChangedEventArgs args)
+    {
+        var e = new SensorAutomationEvent(args.Data);
+        await ProcessEvent(e).ConfigureAwait(false);
+    }
+
     #endregion
 
     #region Event processing
@@ -338,6 +345,7 @@ public class AutomationProcessor(
         await timeAutoListener.UnsubscribeChangedAsync(TimeAutoListener_Changed).ConfigureAwait(false);
         await userInactivityAutoListener.UnsubscribeChangedAsync(UserInactivityAutoListener_Changed).ConfigureAwait(false);
         await wifiAutoListener.UnsubscribeChangedAsync(WiFiAutoListener_Changed).ConfigureAwait(false);
+        await sensorsAutoListener.UnsubscribeChangedAsync(SensorsAutoListener_Changed).ConfigureAwait(false);
 
         if (Log.Instance.IsTraceEnabled)
             Log.Instance.Trace($"Stopped listeners...");
@@ -392,6 +400,14 @@ public class AutomationProcessor(
                 Log.Instance.Trace($"Starting WiFi listener...");
 
             await wifiAutoListener.SubscribeChangedAsync(WiFiAutoListener_Changed).ConfigureAwait(false);
+        }
+
+        if (triggers.OfType<ISensorAutomationPipelineTrigger>().Any())
+        {
+            if (Log.Instance.IsTraceEnabled)
+                Log.Instance.Trace($"Starting sensors listener...");
+
+            await sensorsAutoListener.SubscribeChangedAsync(SensorsAutoListener_Changed).ConfigureAwait(false);
         }
 
         if (Log.Instance.IsTraceEnabled)

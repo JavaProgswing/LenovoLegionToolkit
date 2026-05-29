@@ -1,4 +1,4 @@
-﻿using Autofac;
+using Autofac;
 using LenovoLegionToolkit.Lib.AutoListeners;
 using LenovoLegionToolkit.Lib.Controllers;
 using LenovoLegionToolkit.Lib.Controllers.GodMode;
@@ -110,6 +110,7 @@ public class IoCModule : Module
         builder.Register<TimeAutoListener>();
         builder.Register<UserInactivityAutoListener>();
         builder.Register<WiFiAutoListener>();
+        builder.Register<SensorsAutoListener>();
 
         builder.Register<AIController>();
         builder.Register<DisplayBrightnessController>();

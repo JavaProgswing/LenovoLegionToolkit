@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -100,4 +100,10 @@ public interface IPeriodicAutomationPipelineTrigger : IAutomationPipelineTrigger
     public TimeSpan Period { get; }
 
     IPeriodicAutomationPipelineTrigger DeepCopy(TimeSpan period);
+}
+
+public interface ISensorAutomationPipelineTrigger : IAutomationPipelineTrigger
+{
+    public int TemperatureThreshold { get; }
+    public bool IsGreaterThan { get; }
 }

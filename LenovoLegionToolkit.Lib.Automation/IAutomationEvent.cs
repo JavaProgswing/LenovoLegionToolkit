@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace LenovoLegionToolkit.Lib.Automation;
 
@@ -67,4 +67,9 @@ public readonly struct WiFiAutomationEvent(bool isConnected, string? ssid) : IAu
 {
     public bool IsConnected { get; } = isConnected;
     public string? Ssid { get; } = ssid;
+}
+
+public readonly struct SensorAutomationEvent(LenovoLegionToolkit.Lib.SensorsData sensorsData) : IAutomationEvent
+{
+    public LenovoLegionToolkit.Lib.SensorsData SensorsData { get; } = sensorsData;
 }
